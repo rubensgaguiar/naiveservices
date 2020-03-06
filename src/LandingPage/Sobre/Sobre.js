@@ -69,7 +69,7 @@ class Sobre extends React.Component {
     return (
       <div
         style={{
-          background: "#2E4E54",
+          background: "#1D2A30",
           width: "100%",
           display: "flex",
           justifyContent: "center"
