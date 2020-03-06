@@ -22,7 +22,8 @@ const useStyles = makeStyles({
     height: "64px",
   },
   title: {
-    fontSize: 18
+    fontSize: 18,
+    textAlign: "center"
   },
   subtitle: {
     textAlign: "center",
