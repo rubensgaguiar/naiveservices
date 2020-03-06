@@ -23,6 +23,14 @@ const theme = createMuiTheme({
       "Arial",
       "sans-serif"
     ].join(",")
+  },
+  palette: {
+    primary: {
+      main: "#2E4E54"
+    },
+    secondary: {
+      main: "#0CDCC4"
+    }
   }
 });
 

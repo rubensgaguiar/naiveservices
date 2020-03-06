@@ -13,7 +13,7 @@ const styles = theme => ({
     paddingTop: "64px"
   },
   title: {
-    fontSize: "56px",
+    fontSize: "48px",
     fontFamily: "lato",
     fontWeight: "bold",
   },
@@ -42,15 +42,15 @@ class Home extends React.Component {
         <CssBaseline />
 
         <Grid item >
-          <Typography className={classes.title} align="center">
-            Coffee APPs
+          <Typography className={classes.title} color="primary" align="center" lineHeight={1}>
+            Rubens Aguiar
           </Typography>
           <Typography className={classes.text} align="center">
-            Tirando ideias do papel!
+            Serviços de Inteligência Artificial
           </Typography>
         </Grid>
         <Grid item>
-          <img className={classes.img} src={window.location.origin + "/app.svg"} />
+          <img className={classes.img} src={window.location.origin + "/home.svg"} />
         </Grid>
       </Grid>
     );

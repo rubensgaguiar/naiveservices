@@ -10,18 +10,18 @@ const styles = theme => ({
     display: "flex",
     height: "30vh",
     alignItems: "center",
-    backgroundColor: "#CD5C5C"
+    backgroundColor: "#0CDCC4"
   },
   title: {
     fontSize: "26px",
     fontFamily: "lato",
     fontWeight: "bold",
-    color: "white"
+    color: "#2E4E54"
   },
   text: {
     fontSize: "16px",
     fontFamily: "lato",
-    color: "white"
+    color: "#2E4E54"
   }
 });
 
@@ -43,7 +43,7 @@ class Home extends React.Component {
             Contato
           </Typography>
           <Typography className={classes.text} align="center" variant="h2">
-            Quando quiser, fale conosco!
+            Quando quiser, fale comigo!
           </Typography>
           <br />
             <a href="https://wa.me/5512997847924" style={{textDecoration: "none"}}>
@@ -52,7 +52,7 @@ class Home extends React.Component {
               </Typography>
             </a>
             <Typography className={classes.text} align="center">
-            Email: coffeeappsita@gmail.com
+            Email: rubens.miguek@gmail.com
             </Typography>
         </Grid>
       </Grid>

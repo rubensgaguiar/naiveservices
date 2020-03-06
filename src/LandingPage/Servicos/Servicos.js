@@ -14,10 +14,10 @@ const styles = theme => ({
     margin: 32,
   },
   title: {
-    fontSize: "56px",
+    fontSize: "48px",
     fontFamily: "lato",
     fontWeight: "bold",
-    color: "#1D2A30"
+    color: "#2E4E54"
   },
   text: {
     fontSize: "20px",

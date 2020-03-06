@@ -16,7 +16,7 @@ const styles = theme => ({
     margin: 32
   },
   title: {
-    fontSize: "56px",
+    fontSize: "48px",
     fontFamily: "lato",
     fontWeight: "bold",
     color: "#F5F5F5"
@@ -36,8 +36,8 @@ const styles = theme => ({
   card: {
     paddingBottom: "8px",
     paddingTop: "8px",
-    height: 600,
-    width: 400
+    height: 700,
+    width: 500
   },
   description: {
     display: "flex",
@@ -51,37 +51,6 @@ class Sobre extends React.Component {
     const { classes } = this.props;
 
     const DataCard = [
-      {
-        img: "/stitch.jpg",
-        title: "Henrique Fernandes",
-        linkedin: "https://www.linkedin.com/in/henriquefernandesa/",
-        subtitle: [
-          "Olá, me chamo Henrique e sou engenheiro \
-        da computação no ITA. Sempre tive paixão por inovar\
-        e experimentar novas tecnologias.", "Iniciei minha carreira\
-        acadêmica adentrando em um grupo de pesquisa em robótica,\
-        no qual participei de várias competições de cunho nacional\
-        e internacional, tal como a Robocup.", "Após isso, comecei a\
-        desenvolver projetos pessoais e adentrar no mundo profissional,\
-        no qual acabei adentrando através da startup Quero Educação,\
-        na qual tive experiência com Data Science, principalmente com\
-         processamento de linguagem natural."
-        ]
-      },
-      {
-        img: "/mug.svg",
-        title: "Coffee APPs",
-        subtitle: [
-          "A Coffee APPs é uma Software House que surgiu no alojamento\
-          do Instituto Tecnológico de Aeronáutica (ITA).", "\
-          Ela é formada por dois programadores apaixonados por inovar.\
-          Assim, nós, entusiasmados por aplicar novas tecnologias no cotidiano,\
-          construímos uma base forte e uma grande bagagem de projetos.",
-          "Desse modo, nosso principal foco é utilizar esse conhecimento\
-          em prol de proporcionar soluções tecnológicas para\
-          pessoas físicas e jurídicas."
-        ]
-      },
       {
         img: "/rubs.jpg",
         title: "Rubens Aguiar",
@@ -100,7 +69,7 @@ class Sobre extends React.Component {
     return (
       <div
         style={{
-          background: "#3df0b1",
+          background: "#2E4E54",
           width: "100%",
           display: "flex",
           justifyContent: "center"
@@ -108,7 +77,7 @@ class Sobre extends React.Component {
       >
         <div className={classes.root} id="sobre">
           <Typography className={classes.title} align="center">
-            Sobre Nós
+            Sobre
           </Typography>
           <Grid
             container

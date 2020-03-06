@@ -36,6 +36,9 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     flexGrow: 1
+  },
+  button: {
+    color: "#f8f8f8"
   }
   /*search: {
     position: "relative",
@@ -89,7 +92,7 @@ export default function ButtonAppBar(props) {
             offset={-70}
             duration={500}
         >
-          <Button color="inherit">Home</Button>
+          <Button color="primary">Home</Button>
         </Link>
       </Grid>
   );
@@ -104,7 +107,7 @@ export default function ButtonAppBar(props) {
             offset={-70}
             duration={500}
         >
-          <Button color="inherit">Sobre</Button>
+          <Button color="primary">Sobre</Button>
         </Link>
       </Grid>
   );
@@ -119,7 +122,7 @@ export default function ButtonAppBar(props) {
             offset={-70}
             duration={500}
         >
-          <Button color="inherit">Serviços</Button>
+          <Button color="primary">Serviços</Button>
         </Link>
       </Grid>
   );
@@ -134,7 +137,7 @@ export default function ButtonAppBar(props) {
             offset={-70}
             duration={500}
         >
-          <Button color="inherit">Projetos</Button>
+          <Button color="primary">Projetos</Button>
         </Link>
       </Grid>
   );
@@ -149,7 +152,7 @@ export default function ButtonAppBar(props) {
             offset={-70}
             duration={500}
         >
-          <Button color="inherit">Contato</Button>
+          <Button color="primary">Contato</Button>
         </Link>
       </Grid>
   );
@@ -171,8 +174,8 @@ export default function ButtonAppBar(props) {
           <Toolbar className={classes.topBar}>
             <Grid item style={{ display: "flex", alignItems: "center" }}>
               <img
-                src={window.location.origin + "/workplace.svg"}
-                height="64px"
+                src={window.location.origin + "/files-and-folders.svg"}
+                height="56px"
               />
             </Grid>
             <Hidden xsDown>

@@ -2,7 +2,7 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import styled from "styled-components";
-import MediaCard from "./Card/Card";
+import MediaCard from "../Servicos/ServicosCard";
 import { withStyles } from "@material-ui/styles";
 import PropTypes from "prop-types";
 
@@ -18,7 +18,7 @@ const styles = theme => ({
     margin: 16
   },
   title: {
-    fontSize: "56px",
+    fontSize: "48px",
     fontFamily: "lato",
     fontWeight: "bold",
     paddingTop: "16px",
@@ -34,15 +34,16 @@ const styles = theme => ({
   img: {
     width: "100%"
   },
-  card: {
-    width: "400px",
-    padding: "10px 0px 10px"
-  },
   description: {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center"
-  }
+  },
+  card: {
+    margin: 8,
+    height: 196,
+    width: 400
+  },
 });
 
 class Projetos extends React.Component {
@@ -51,117 +52,83 @@ class Projetos extends React.Component {
 
     const DataCard = [
       {
-        imgs: [
-          {
-            label: "Tela de Login",
-            imgPath: "/chain.svg"
-          },
-          {
-            label: "Tela de Sign Up",
-            imgPath: "/chain2.svg"
-          },
-          {
-            label: "Tela de Chat",
-            imgPath: "/chain1.svg"
-          }
-        ],
-        title: "Aplicativo",
-        subtitle: "Chatbot para Android, IPhone e Web.\
-        ",
-        description: [
-          "Chatbot com sistema de login, cadastro e comunicação com uma API feita em Python que executava toda a lógica para gerar uma resposta ao usuário. Este aplicativo foi desenvolvido para Android, IPhone e Web."
-        ]
-      },
-      {
-        imgs: [
-          {
-            label: "Home dos Vídeos",
-            imgPath: "/inova1.svg"
-          },
-          {
-            label: "Tela de Exibição",
-            imgPath: "/inova2.svg"
-          },
-          {
-            label: "Vídeos Recomendados",
-            imgPath: "/inova3.svg"
-          }
-        ],
-        title: "Aplicativo",
-        subtitle: "Aplicação Web de vídeos no modelo do Netflix.",
-        description: [
-          "Aplicação Web com sistema de login, cadastro, exibição de vídeos e upload de vídeos. Nesta aplicação o dono da página realizava upload dos vídeos para os assinantes da plataforma."
-        ]
-      },
-      {
-        imgs: [
-          {
-            label: "",
-            imgPath: "/manage.svg"
-          }
-        ],
-        title: "Ciência de Dados",
-        subtitle: "Machine learning para resolver desafios.",
-        description: [
-          "Pre-processamentos de dados.",
-          "Modelagem de problemas que envolvam análise de dados.",
-          "Criação de gráficos interativos.",
-          "Geração de conclusões e insights a partir dos dados."
-        ]
-      },
-      {
-        imgs: [
-          {
-            label: "",
-            imgPath: "/audio-book.svg"
-          }
-        ],
-        title: "Processamento de Linguagem",
-        subtitle: "Uso de IA para entender e compor informações.",
-        description: [
-          "Reconhecimento de informações e intenções no texto.",
-          "Filtragem de textos.",
-          "Geração de textos e relatórios a partir de informações.",
-          "Reconhecimento e transcrição de voz."
-        ]
-      },
-      {
-        imgs: [
-          {
-            label: "",
-            imgPath: "/vision.svg"
-          }
-        ],
+        img: "/vision.svg",
         title: "Visão Computacional",
-        subtitle: "Obter informação de imagens ou vídeos.",
-        description: [
-          "Algoritmo para tirar informações de CNHs.",
-          "Reconhecimento de objetos ou pessoas do mundo real."
-        ]
+        subtitle:
+            "Algoritmo para ler informações de CNHs."
       },
       {
-        imgs: [
-          {
-            label: "",
-            imgPath: "/data.svg"
-          }
-        ],
+        img: "/vision.svg",
+        title: "Visão Computacional",
+        subtitle:
+            "Reconhecimento de objetos ou pessoas."
+      },
+      {
+        img: "/manage.svg",
+        title: "Ciência de Dados",
+        subtitle:
+            "Pré-processamento de dados."
+      },
+      {
+        img: "/manage.svg",
+        title: "Ciência de Dados",
+        subtitle:
+            "Modelagem de problemas que envolvam análise de dados."
+      },
+      {
+        img: "/manage.svg",
+        title: "Ciência de Dados",
+        subtitle:
+            "Criação de gráficos interativos."
+      },
+      {
+        img: "/manage.svg",
+        title: "Ciência de Dados",
+        subtitle:
+            "Gerar conclusões e insights a partir de dados."
+      },
+      {
+        img: "/audio-book.svg",
+        title: "Processamento de Linguagem",
+        subtitle:
+            "Reconhecimento de informações e intenções em um texto."
+      },
+      {
+        img: "/audio-book.svg",
+        title: "Processamento de Linguagem",
+        subtitle:
+            "Geração de textos e relatórios a partir de informações estruturadas."
+      },
+      {
+        img: "/audio-book.svg",
+        title: "Processamento de Linguagem",
+        subtitle:
+            "Reconhecimento e transcrição de voz."
+      },
+      {
+        img: "/data.svg",
         title: "Automatização de Processos",
-        subtitle: "Web scrapping, sistemas operacionais e APIs",
-        description: [
-          "Burlar captchas.",
-          "Extrair informações de páginas web.",
-          "Configurar projetos em sistemas operacionais.",
-          "Fazer testes estatísticos de performace.",
-          "Automatizar tarefas manuais."
-        ]
-      }
+        subtitle:
+            "Burlar captchas."
+      },
+      {
+        img: "/data.svg",
+        title: "Automatização de Processos",
+        subtitle:
+            "Extrair informações de páginas da web."
+      },
+      {
+        img: "/data.svg",
+        title: "Automatização de Processos",
+        subtitle:
+            "Automatizar a integração de informações estruturadas de diferentes sistemas."
+      },
     ];
 
     return (
       <div
         style={{
-          background: "#3df0b1",
+          background: "#1D2A30",
           width: "100%",
           display: "flex",
           justifyContent: "center"

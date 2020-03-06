@@ -11,18 +11,18 @@ const styles = theme => ({
         display: "flex",
         height: "15vh",
         alignItems: "center",
-        backgroundColor: "#CD5C5C"
+        backgroundColor: "#0CDCC4"
     },
     title: {
         fontSize: "26px",
         fontFamily: "lato",
         fontWeight: "bold",
-        color: "white"
+        color: "#2E4E54"
     },
     text: {
         fontSize: "16px",
         fontFamily: "lato",
-        color: "white"
+        color: "#2E4E54"
     }
 });
 
